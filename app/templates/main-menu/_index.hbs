@@ -1,0 +1,15 @@
+<div>
+  <ul>
+    {{#each navigationMenu as |menu|}}
+        <li class="">
+          {{#link-to menu.link}}
+            <span class="username">{{menu.name}} </span>
+          {{/link-to}}
+        </li>
+    {{/each}}
+  </ul>
+</div>
+<div class="col-sm-8">
+  <!-- outlet goes here -->
+  {{outlet}}
+</div>
